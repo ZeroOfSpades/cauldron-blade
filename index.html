@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cauldron Blade</title>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="./main.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="game">
+            <div class="scene" id="main-menu">
+                <img id="logo" src="./assets/logo.png" alt="logo">
+                <div id="menu">
+                    <div class="menu-button" id="p1-start">
+                        1 PLAYER
+                    </div>
+                    <div class="menu-button" id="p2-start">
+                        2 PLAYERS
+                    </div>
+                    <div class="menu-button" id="tutorial-start">
+                        TUTORIAL
+                    </div>
+                    <div class="menu-button" id="settings-start">
+                        SETTINGS
+                    </div>
+                    <div class="menu-button" id="quit">
+                        QUIT
+                    </div>
+                </div>
+            </div>
+            <div class="scene" id="tutorial"></div>
+            <div class="scene" id="settings"></div>
+            <div class="scene" id="level-select"></div>
+            <div class="scene" id="battle">
+                <img class="big-player" id="p1-big" src="./assets/p1_big.png" alt="battle">
+                <img class="big-player" id="p2-big" src="./assets/p2_big.png" alt="battle">
+                <div id="battle-panel">
+                    <div class="player" id="p1"></div>
+                    <div class="player" id="p2"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

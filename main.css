@@ -76,3 +76,24 @@ html, body {
 #p2 {
     background-color: blue;
 }
+
+.fruit {
+    position: absolute;
+    z-index: 0;
+}
+
+.cross-fruit {
+    background-color: lightgreen;
+}
+
+.x-fruit {
+    background-color: magenta;
+}
+
+.wave-fruit {
+    background-color: orange;
+}
+
+.bomb-fruit {
+    background-color: cyan;
+}

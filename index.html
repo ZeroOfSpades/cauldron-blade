@@ -12,6 +12,9 @@
     </head>
     <body>
         <div id="game">
+            <audio id="button-sound" src=""></audio>
+            <audio id="attack-sound" src=""></audio>
+            <audio id="win-sound" src=""></audio>
             <div class="scene" id="main-menu">
                 <img id="logo" src="./assets/logo.png" alt="logo">
                 <div id="menu">
@@ -32,17 +35,57 @@
                     </div>
                 </div>
             </div>
-            <div class="scene" id="tutorial"></div>
-            <div class="scene" id="settings"></div>
+            <div class="scene" id="tutorial">
+                <div id="tutorial-panel">
+                    <img id="tutorial-image" src="./assets/tutorial.png" alt="tutorial">
+                </div>
+            </div>
+            <div class="scene" id="settings">
+                <div id="settings-panel">
+                    <div id="settings-list">
+                        <div class="setting-row" id="timer-setting">
+                            Timer level:
+                            <div class="arrow-field" id="timer-level">0</div>
+                        </div>
+                        <div class="setting-row" id="ing-setting">
+                            Ingredients level:
+                            <div class="arrow-field" id="ing-level">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="scene" id="level-select"></div>
             <div class="scene" id="battle">
                 <img class="big-player" id="p1-big" src="./assets/p1_big.png" alt="battle">
                 <img class="big-player" id="p2-big" src="./assets/p2_big.png" alt="battle">
+                <div id="stats">
+                    <div class="battle-stat" id="timer">
+                        Time:
+                        <div class="battle-num" id="timer-num">0</div>
+                    </div>
+                    <div class="battle-stat" id="p1-life">
+                        Player 1 life:
+                        <div class="battle-num" id="p1-life-num">0</div>
+                    </div>
+                    <div class="battle-stat" id="p1-ing">
+                        Player 1 ingredients:
+                        <div class="battle-num" id="p1-ing-num">0</div>
+                    </div>
+                    <div class="battle-stat" id="p2-life">
+                        Player 1 life:
+                        <div class="battle-num" id="p2-life-num">0</div>
+                    </div>
+                    <div class="battle-stat" id="p2-ing">
+                        Player 2 ingredients:
+                        <div class="battle-num" id="p2-ing-num">0</div>
+                    </div>
+                </div>
                 <div id="battle-panel">
                     <div class="player" id="p1"></div>
                     <div class="player" id="p2"></div>
                 </div>
             </div>
+            <div class="scene" id="game-over"></div>
         </div>
     </body>
 </html>
